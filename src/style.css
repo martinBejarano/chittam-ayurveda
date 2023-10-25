@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------FONTS------------ */
+
+/* Black-Mango */
+@font-face {
+    font-family: 'Black-Mango';
+    src: url('/fonts/black-mango/BlackMango-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Black-Mango';
+    src: url('/fonts/black-mango/BlackMango-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Black-Mango';
+    src: url('/fonts/black-mango/BlackMango-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+/* Kodchasan */
+@font-face {
+    font-family: 'Kodchasan';
+    src: url('/fonts/kodchasan/Kodchasan-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kodchasan';
+    src: url('/fonts/kodchasan/Kodchasan-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: 500;
+}
+
+/* ------------FONTS------------ */
+
+
+/* ------------STYLES------------ */
+@layer base {
+    body {
+        @apply font-kodchasan text-base sm:text-xl font-medium text-gray-dark;
+    }
+
+    h1 {
+        @apply text-4xl sm:text-6xl font-bold font-mango;
+    }
+
+    h2 {
+        @apply text-2xl sm:text-4xl font-bold font-mango;
+    }
+
+    h3 {
+        @apply text-xl sm:text-3xl font-bold font-mango;
+    }
+
+    h4 {
+        @apply text-base sm:text-lg font-bold;
+    }
+
+    h5 {
+        @apply font-extrabold text-sm;
+    }
+
+    h6 {
+        @apply font-bold text-sm;
+    }
+
+    a {
+        @apply font-bold hover:cursor-pointer font-mango block;
+    }
+
+    .button {
+        @apply text-white bg-gray-dark bg-opacity-95 py-2 rounded-3xl
+    }
+
+    input,
+    textarea,
+    [type="text"] {
+        @apply w-full;
+
+        &:focus {
+            @apply border-solid border-[1px];
+        }
+    }
+
+    label {
+        @apply block;
+    }
+}
+
+/* ------------STYLES------------ */
